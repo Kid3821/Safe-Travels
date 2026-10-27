@@ -9,7 +9,7 @@ const hypeQuotes = [
 ];
 
 // Set this to the deployed Google Apps Script web app URL.
-const GOOGLE_SHEETS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxdLyEBsyR9US4-igSl6kVE7pmzSt6DA4dFwiyxG82H7ICJmwbnhDuSCwfqVAFm6d4/exec';
+const GOOGLE_SHEETS_WEB_APP_URL = '';
 
 // Generate Hype Logic
 function generateHype() {
