@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💃 Spain & Wedding VIP Kit 🇪🇸</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💃 Spain & Wedding VIP Kit 🇪🇸</h1>
+    <p class="subtitle">An official digital survival & hype companion for 20+ days of stay!</p>
+
+    <div class="card flight-wish">
+      <div class="card-title">💌 One little send-off</div>
+      <p>Have the loveliest flight to Spain! May your seat be comfy, your snacks plentiful, and the person reclining in front of you suddenly remember you need legroom. ✈️</p>
+      <p>Wishing you and your family safe travels, unforgettable wedding memories, and a smooth landing. Enjoy every moment together—Spain is lucky to have your whole crew! ❤️</p>
+    </div>
+
+    <!-- Module 1: Hype Engine -->
+    <div class="card">
+      <div class="card-title">✨ Wedding Guest VIP Hype Engine</div>
+      <p class="card-subtitle">Tap whenever you need an instant confidence boost for the trip!</p>
+      <div class="display-box" id="hypeDisplay">Click below to generate Spain hype!</div>
+      <button class="btn" onclick="generateHype()">🚀 Generate Spain Hype</button>
+    </div>
+
+    <!-- Module 2: Essential Spanish Phrasebook -->
+    <div class="card">
+      <div class="card-title">🥘 Essential Spanish Phrasebook</div>
+      <p class="card-subtitle">Tap a button below to reveal what to say in Spain:</p>
+      <div class="phrase-grid">
+        <button class="phrase-btn" onclick="showPhrase('🍫', 'Más chocolate, por favor.', 'More chocolate, please (Priority #1).')">🍫 Chocolate</button>
+        <button class="phrase-btn" onclick="showPhrase('☕', 'Un café con leche, por favor.', 'A coffee with milk, please!')">☕ Coffee</button>
+        <button class="phrase-btn" onclick="showPhrase('💃', '¡Esta boda es increíble!', 'This wedding is incredible!')">💃 Wedding</button>
+        <button class="phrase-btn" onclick="showPhrase('📸', '¡Foto perfecta!', 'Perfect picture moment!')">📸 Photos</button>
+      </div>
+      <div class="display-box" id="phraseDisplay">Select a quick phrase above!</div>
+    </div>
+
+    <!-- Module 3: Welcome Home Reunion Coupons -->
+    <div class="card">
+      <div class="card-title">🎟️ Welcome Home Reunion Coupons</div>
+      <div class="coupon-container">
+        
+        <!-- Coupon 1 -->
+        <div class="coupon-card">
+          <div class="coupon-header">
+            <div class="coupon-title">🎟️ 1x VIP Foodie Excursion</div>
+          </div>
+          <div class="coupon-desc">You pick the spot, you pick the food, and I pick up the check. Zero argument allowed!</div>
+          <button class="coupon-btn" onclick="claimCoupon(this, 'VIP Foodie Excursion')">Claim Coupon</button>
+        </div>
+
+        <!-- Coupon 2 -->
+        <div class="coupon-card">
+          <div class="coupon-header">
+            <div class="coupon-title">🎟️ 1x Laser Tag Showdown Pass</div>
+          </div>
+          <div class="coupon-desc">Redeemable upon return to settle the score once and for all. You claimed you could beat me, so I’m supplying the arena. Winner gets bragging rights!</div>
+          <button class="coupon-btn" onclick="claimCoupon(this, 'Laser Tag Showdown')">Claim Coupon</button>
+        </div>
+
+      </div>
+    </div>
+
+    <footer>
+      Built for the ultimate travel experience. Have the most incredible trip to Spain! ✈️✨
+    </footer>
+  </div>
+
+  <!-- Custom Popup Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-card">
+      <h3 id="modalTitle">🎉 Coupon Claimed!</h3>
+      <p id="modalBody">This reunion pass is officially locked in for when you get back from Spain!</p>
+      <button class="btn" style="margin-top:0;" onclick="closeModal()">Awesome!</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
