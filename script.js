@@ -54,7 +54,7 @@ async function claimCoupon(btn, couponName) {
 
     btn.innerText = '✓ Request sent';
     btn.classList.add('claimed');
-    showModal(`🎟️ ${couponName} Submitted`, 'The claim request was sent. Check the Coupon Claims tab to confirm it was recorded.');
+    showModal(`🎟️ ${couponName} Submitted`, 'The claim request was sent.');
   } catch (error) {
     btn.disabled = false;
     btn.innerText = 'Claim Coupon';
